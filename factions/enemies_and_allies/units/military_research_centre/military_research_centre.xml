@@ -1,0 +1,229 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<max-hp value="5500" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>		
+		<sight value="12" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="1011"/>
+			<row value="1011"/>
+			<row value="0000"/>
+			<row value="1110"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="headquarters" />
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="wood" amount="50" />
+			<resource name="stone" amount="100" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name="wood" amount="200" />
+			<resource name="stone" amount="350"/>
+		</resources-stored>
+		<image path="images/blacksmith.bmp"/>
+		<image-cancel path="../headquarters/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../headquarters/models/build2.g3d" />
+			<sound enabled="false" />
+			<type value="be_built" />
+		</skill>
+		
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="models/reacerch_base.g3d" />
+			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="smoke_particles1.xml"/>
+			</particles>
+		</skill>	
+		
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="models/reacerch_base.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles1.xml"/>
+				<particle-file path="smoke_particles2.xml"/>
+				<particle-file path="smoke_particles3.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.3">
+				<sound-file path="sounds/anvil1.wav"/>
+			</sound>
+		</skill>
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../advanced_barracks/models/brake2.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../headquarters/sounds/tech_building_fall1.wav"/>
+			</sound>	
+			<particles value="true">
+				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
+				<particle-file path="../advanced_barracks/glow_particles.xml"/>
+			</particles>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_hanger_lvl2" />
+			<image path="../../upgrades/hanger_lvl2/images/hl2.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="hanger_lvl2"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_hanger_lvl3" />
+			<image path="../../upgrades/hanger_lvl3/images/hl3.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="hanger_lvl2"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="hanger_lvl3"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_hanger_lvl4" />
+			<image path="../../upgrades/hanger_lvl4/images/hl4.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="hanger_lvl3"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="hanger_lvl4"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_barracks_lvl2" />
+			<image path="../../upgrades/barracks_lvl2/images/bl2.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="barracks_lvl2"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_barracks_lvl3" />
+			<image path="../../upgrades/barracks_lvl3/images/bl3.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="barracks_lvl2"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="barracks_lvl3"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_barracks_lvl4" />
+			<image path="../../upgrades/barracks_lvl4/images/bl4.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="barracks_lvl3"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="barracks_lvl4"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_defence_lvl1" />
+			<image path="../../upgrades/defence_lvl1/images/bl2.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="defence_lvl1"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_defence_lvl2" />
+			<image path="../../upgrades/defence_lvl2/images/bl2.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="defence_lvl1"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="defence_lvl2"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_defence_lvl3" />
+			<image path="../../upgrades/defence_lvl3/images/bl2.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="defence_lvl2"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="defence_lvl3"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_defence_lvl4" />
+			<image path="../../upgrades/defence_lvl4/images/bl2.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name="defence_lvl3"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="defence_lvl4"/>
+		</command>
+		
+	</commands>
+</unit>

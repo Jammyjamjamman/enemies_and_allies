@@ -1,0 +1,182 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="2000" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="20"/>	
+		<armor-type value="leather"/>				
+		<sight value="12"/>
+		<time value="10"/>	
+		<multi-selection value="false"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements>
+			<upgrade name="gas"/>
+		</upgrade-requirements>
+		<resource-requirements/>
+		<resources-stored/>
+		<image path="images/swordman.bmp"/>
+		<image-cancel path="../headquarters/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/swordman_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select6.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select7.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack6.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="45"/>
+			<animation path="models/gas_vent_open.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../gun_trap/models/build_small.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="200"/>
+			<animation path="models/gas_vent_closing.g3d"/>
+			<sound enabled="false"/>
+			<anim-progress-bound value="true"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="45"/>
+			<animation path="models/gas_vent_open.g3d"/>
+			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="gas_particles1.xml"/>
+				<particle-file path="gas_particles2.xml"/>
+				<particle-file path="gas_particles3.xml"/>
+				<particle-file path="gas_particles4.xml"/>
+				<particle-file path="gas_particles5.xml"/>
+				<particle-file path="gas_particles6.xml"/>
+				<particle-file path="gas_particles7.xml"/>
+				<particle-file path="gas_particles8.xml"/>
+			</particles>
+                         <attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="8"/>
+                        	<target value="unit-types"> <!-- ally foe faction unit-types all-->
+					<unit-type name="carbine_solder" />
+					<unit-type name="flame_thrower" />
+					<unit-type name="howitzer" />
+					<unit-type name="machine_gun_solder" />
+					<unit-type name="recruit" />
+					<unit-type name="rifleman" />
+					<unit-type name="rocket_launcher" />
+					<unit-type name="technician" />
+                                </target>
+
+				<max-hp value="-10" value-percent-multiplier="true"/>
+				<max-ep value="0"/>
+				<sight value="-50" value-percent-multiplier="true"/>
+				<attack-strenght value="-25" value-percent-multiplier="true"/>
+				<attack-range value="-70" value-percent-multiplier="true"/>
+				<armor value="0"/>
+				<move-speed value="-70" value-percent-multiplier="true"/>
+				<production-speed value="0"/>
+				<particles value="false">
+					<originator-particle-file path="gas_particles.xml"/>
+					<affected-particle-file path="gas_particles.xml"/>
+				</particles>
+                         </attack-boost>
+		</skill>	
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="../sleeping_gas_trap/models/brake.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_die1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_die2.wav"/>
+			</sound>	
+			<particles value="true">
+				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
+				<particle-file path="../gun_trap/glow_particles.xml"/>
+			</particles>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../headquarters/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="stop"/>
+			<name value="start"/>
+			<image path="/images/swordman_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="close"/>
+			<image path="../sleeping_gas_trap/images/close.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "sleeping_gas_trap"/>
+			<discount value="100"/>
+		</command>
+
+	</commands>
+</unit>

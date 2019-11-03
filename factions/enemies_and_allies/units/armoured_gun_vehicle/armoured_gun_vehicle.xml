@@ -1,0 +1,217 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="2"/>
+		<max-hp value="2500" regeneration="1"/>
+		<max-ep value="0"/>
+		<armor value="60"/>	
+		<armor-type value="metal"/>				
+		<sight value="20"/>
+		<time value="130"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="advanced" kills="16"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties>
+			<property value="rotated_climb"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="headquarters"/>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="300"/>	
+			<resource name="wood" amount="200"/>	
+			<resource name="oil" amount="10"/>	
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/swordman.bmp"/>
+		<image-cancel path="../headquarters/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/swordman_select1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select6.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_select7.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack1.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack2.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack3.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack4.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack5.wav"/>
+			<sound path="$COMMONDATAPATH/sounds/swordman_ack6.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="45"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle2.g3d"/>
+			<animation path="models/armoured_gun_tank_idle3.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="260"/>
+			<anim-speed value="40"/>
+			<animation path="models/armoured_gun_tank_move.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+                <skill>
+                        <type value="stop"/>
+                        <name value="hold_skill"/>
+                        <ep-cost value="0"/>
+                        <speed value="100"/>
+                        <anim-speed value="45"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<animation path="models/armoured_gun_tank_idle2.g3d"/>
+			<animation path="models/armoured_gun_tank_idle3.g3d"/>
+                        <sound enabled="false"/>
+                </skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="charge_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="40"/>
+			<animation path="models/armoured_gun_tank_move.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="models/armoured_gun_tank_attack.g3d"/>
+			<sound enabled="true" start-time="0.47">
+				<sound-file path="$COMMONDATAPATH/sounds/chaingun.ogg"/>
+			</sound> 
+			<particles value="true" start-time="0.4" end-time="0.5">
+				<particle-file path="flash.xml"/>
+			</particles>
+			<attack-strenght value="250"/>
+			<attack-var value="50"/>
+			<attack-range value="12"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.4"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false"/>
+			</projectile>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="80"/>
+			<animation path="models/armoured_gun_tank_idle1.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="models/armoured_gun_tank_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_die1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/swordman_die2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../headquarters/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../headquarters/images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/swordman_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+                        <type value="attack_stopped"/>
+                        <name value="stand_ground"/>
+                        <image path="images/tech_hold.bmp"/>
+                        <unit-requirements/>
+                        <upgrade-requirements/>
+                        <stop-skill value="hold_skill"/>
+                        <attack-skill value="attack_skill"/>
+		</command>
+
+		<!--command>
+			<type value="morph"/>
+			<name value="promote_to_guard"/>
+			<image path="../guard/images/guard.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "guard"/>
+			<discount value="60"/>
+		</command-->	
+
+	</commands>
+</unit>

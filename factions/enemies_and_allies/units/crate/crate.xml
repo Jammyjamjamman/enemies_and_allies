@@ -1,0 +1,124 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="800" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="wood"/>					
+		<sight value="1"/>
+		<time value="10"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="wood" amount="100"/>
+			<resource name="oil" amount="1"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/crate.bmp"/>
+		<image-cancel path="../headquarters/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+
+
+	</parameters>
+
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="55"/>
+			<animation path="models/crate.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="200"/>
+			<animation path="models/crate.g3d"/>
+			<sound enabled="true" start-time="0">
+				<!--sound-file path="sounds/puff.ogg"/-->
+			</sound>
+		</skill>			
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="90"/>
+			<anim-speed value="50"/>
+			<animation path="models/brakec.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/mat_wood1.ogg"/>
+				<sound-file path="sounds/mat_wood2.ogg"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../headquarters/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="let_out_recruit"/>
+			<image path="../recruit/images/worker.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "recruit"/>
+			<discount value="0"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="let_out_machine_gun_solder"/>
+			<image path="../machine_gun_solder/images/swordman.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "machine_gun_solder"/>
+			<discount value="0"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="let_out_gun_trap"/>
+			<image path="../gun_trap/images/barracks.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "gun_trap"/>
+			<discount value="0"/>
+		</command>
+
+	</commands>
+</unit>
