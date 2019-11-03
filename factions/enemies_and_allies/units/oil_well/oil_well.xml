@@ -7,10 +7,11 @@
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="metal"/>				
+		<armor-type value="metal"/>
 		<sight value="15" />
 		<time value="50" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="00000"/>
 			<row value="11111"/>
@@ -44,43 +45,43 @@
 			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="100" />
 			<animation path="models/oil_well.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/oil_well_build.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="100" />
 			<anim-speed value="50" />
 			<animation path="models/oil_well_pump.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -97,19 +98,19 @@
 				<particle-file path="fire_particles6.xml"/>
 				<particle-file path="fire_particles7.xml"/>
 				<particle-file path="fire_particles8.xml"/>
-			</particles>	
+			</particles>
 			<particles value="true">
 				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
 				<particle-file path="../advanced_barracks/glow_particles.xml"/>
-			</particles>				
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
-	
+
 		<command>
 			<type value="produce"/>
 			<name value="pump_oil" />
@@ -118,7 +119,7 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="oil"/>
-		</command>	
+		</command>
 
 	</commands>
 </unit>

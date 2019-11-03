@@ -9,7 +9,8 @@
 		<armor-type value="metal"/>
 		<sight value="8" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1111"/>
 			<row value="1001"/>
@@ -44,10 +45,10 @@
 			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -55,10 +56,10 @@
 			<animation path="models/barracks_1.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="200"/>
@@ -67,56 +68,56 @@
 		</skill>
 
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="../headquarters/models/build.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/barracks_1.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="280" />
 			<anim-speed value="300" />
 			<animation path="models/barracks_1.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="../advanced_barracks/models/brake2.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../headquarters/sounds/tech_building_fall4.wav"/>
-			</sound>	
+			</sound>
 			<particles value="true">
 				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
 				<particle-file path="../advanced_barracks/glow_particles.xml"/>
-			</particles>			
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-	
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_rifleman" />
@@ -125,8 +126,8 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="rifleman"/>
-		</command>	
-		
+		</command>
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_rocket_launcher" />
@@ -167,6 +168,6 @@
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="training_field"/>
 		</command-->
-				
+
 	</commands>
 </unit>

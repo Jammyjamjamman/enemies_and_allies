@@ -6,11 +6,12 @@
 		<height value="2"/>
 		<max-hp value="2000" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="20"/>	
-		<armor-type value="leather"/>				
+		<armor value="20"/>
+		<armor-type value="leather"/>
 		<sight value="12"/>
-		<time value="25"/>	
-		<multi-selection value="false"/>
+		<time value="25"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true" allowEmpty="true">
 			<row value="00"/>
 			<row value="00"/>
@@ -18,7 +19,7 @@
 		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
@@ -50,10 +51,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
@@ -63,18 +64,18 @@
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="200"/>
 			<animation path="models/gun_trap_opening.g3d"/>
 			<sound enabled="false"/>
 			<anim-progress-bound value="true"/>
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -82,19 +83,19 @@
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/swordman_die1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/swordman_die2.wav"/>
-			</sound>		
+			</sound>
 			<particles value="true">
 				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
 				<particle-file path="../gun_trap/glow_particles.xml"/>
-			</particles>		
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>

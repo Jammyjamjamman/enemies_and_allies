@@ -7,10 +7,11 @@
 		<max-hp value="5500" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
-		<armor-type value="stone"/>		
+		<armor-type value="stone"/>
 		<sight value="12" />
 		<time value="120" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1011"/>
 			<row value="1011"/>
@@ -48,10 +49,10 @@
 			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -59,10 +60,10 @@
 			<sound enabled="false" />
 			<type value="be_built" />
 		</skill>
-		
+
 		<skill>
 			<type value="stop" />
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="50" />
@@ -71,11 +72,11 @@
 			<particles value="true">
 				<particle-file path="smoke_particles1.xml"/>
 			</particles>
-		</skill>	
-		
+		</skill>
+
 		<skill>
 			<type value="upgrade" />
-			<name value="upgrade_skill"/>		
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="150" />
@@ -89,21 +90,21 @@
 				<sound-file path="sounds/anvil1.wav"/>
 			</sound>
 		</skill>
-		
+
 		<skill>
 			<type value="die" />
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="../advanced_barracks/models/brake2.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../headquarters/sounds/tech_building_fall1.wav"/>
-			</sound>	
+			</sound>
 			<particles value="true">
 				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
 				<particle-file path="../advanced_barracks/glow_particles.xml"/>
-			</particles>			
+			</particles>
 			<fade value="false"/>
 		</skill>
 
@@ -224,6 +225,6 @@
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="defence_lvl4"/>
 		</command>
-		
+
 	</commands>
 </unit>

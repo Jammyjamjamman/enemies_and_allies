@@ -9,18 +9,19 @@
 		<height value="3"/>
 		<max-hp value="6000" regeneration="2"/>
 		<max-ep value="0"/>
-		<armor value="60"/>	
-		<armor-type value="metal"/>				
+		<armor value="60"/>
+		<armor-type value="metal"/>
 		<sight value="15"/>
 		<time value="25"/>
-		<multi-selection value="false"/>
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="elite" kills="10"/>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
@@ -37,10 +38,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
@@ -50,7 +51,7 @@
 
 		<skill>
 			<type value="be_built" />
-			<name value="be_built_skill"/>		
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -60,18 +61,18 @@
 
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="200"/>
 			<animation path="models/gun_trap_closing.g3d"/>
 			<sound enabled="false"/>
 			<anim-progress-bound value="true"/>
-		</skill>	
- 
+		</skill>
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="150"/>
@@ -81,14 +82,14 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="150"/>
 			<animation path="models/gun_trap_open.g3d"/>
 			<sound enabled="true" start-time="0.4">
 				<sound-file path="$COMMONDATAPATH/sounds/shot1.wav"/>
-			</sound> 
+			</sound>
 			<particles value="true" start-time="0.4" end-time="0.5">
 				<particle-file path="flash.xml"/>
 			</particles>
@@ -111,10 +112,10 @@
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
 		</skill>
-		
+
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
@@ -125,15 +126,15 @@
 			<particles value="true">
 				<particle-file path="../advanced_barracks/smoke_particles.xml"/>
 				<particle-file path="../gun_trap/glow_particles.xml"/>
-			</particles>				
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value= "stop"/>
 			<name value="attack_off"/>
@@ -163,6 +164,6 @@
 			<morph-unit name= "gun_trap_"/>
 			<discount value="100"/>
 		</command>
-		
+
 	</commands>
 </unit>

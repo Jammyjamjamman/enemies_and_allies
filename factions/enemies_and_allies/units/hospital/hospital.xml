@@ -9,7 +9,8 @@
 		<armor-type value="metal"/>
 		<sight value="12" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="1111"/>
 			<row value="1001"/>
@@ -44,10 +45,10 @@
 			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
 		</command-sounds>
 	</parameters>
-	
+
 	<skills>
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -58,17 +59,17 @@
 
 		<skill>
 			<type value="repair"/>
-			<name value="heal"/>		
+			<name value="heal"/>
 			<ep-cost value="1"/>
 			<speed value="500"/>
 			<anim-speed value="500"/>
 			<animation path="models/hospital.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="morph"/>
-			<name value="morph_skill"/>		
+			<name value="morph_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="200"/>
@@ -77,38 +78,38 @@
 		</skill>
 
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="../headquarters/models/build2.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="upgrade"/>	
-			<name value="upgrade_skill"/>	
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/hospital.g3d" />
 			<sound enabled="false" />
 		</skill>
-		
+
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="280" />
 			<anim-speed value="300" />
 			<animation path="models/hospital.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
+		</skill>
+
 		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
@@ -119,14 +120,14 @@
 			<particles value="true">
 				<particle-file path="smoke_particles.xml"/>
 				<particle-file path="glow_particles.xml"/>
-			</particles>			
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 	</skills>
-	
+
 	<commands>
-	
+
 		<!--command>
 			<type value="repair"/>
 			<name value="heal"/>
@@ -135,9 +136,9 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<repair-skill value="heal"/>
-			<repaired-units>	
-				<unit name="carbine_solder"/>				
-			</repaired-units>		
+			<repaired-units>
+				<unit name="carbine_solder"/>
+			</repaired-units>
 		</command-->
 
 		<command>
@@ -148,7 +149,7 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="military_ambulance"/>
-		</command>	
+		</command>
 
 		<!--command>
 			<type value="upgrade"/>
