@@ -100,12 +100,12 @@
 
 		<command>
 			<type value="morph"/>
-			<name value="let_out_machine_gun_solder"/>
-			<image path="../machine_gun_solder/images/swordman.bmp"/>
+			<name value="let_out_machine_gun_soldier"/>
+			<image path="../machine_gun_soldier/images/swordman.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<morph-skill value="morph_skill"/>
-			<morph-unit name= "machine_gun_solder"/>
+			<morph-unit name= "machine_gun_soldier"/>
 			<discount value="0"/>
 		</command>
 

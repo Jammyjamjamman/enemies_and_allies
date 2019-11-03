@@ -12,8 +12,8 @@
 	</resource-requirements>
 	<effects>
 		<unit name="rifleman"/>
-		<unit name="carbine_solder"/>
-		<unit name="machine_gun_solder"/>
+		<unit name="carbine_soldier"/>
+		<unit name="machine_gun_soldier"/>
 		<unit name="rocket_launcher"/>
 	</effects>
 	<max-hp value="0"/>

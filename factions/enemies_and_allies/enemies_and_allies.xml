@@ -16,7 +16,7 @@
 		<unit name="outpost_i_i" amount="0"/>
 		<unit name="gun_trap" amount="0"/>
 		<unit name="nuclear_missile_launcher" amount="0"/>
-		<unit name="sleeping_gas_solder" amount="0"/>
+		<unit name="sleeping_gas_soldier" amount="0"/>
 		<unit name="uragan_vehicle" amount="0"/>
 		<unit name="leclerc_tank" amount="0"/>
 		<unit name="conqueror_tank" amount="0"/>

@@ -136,7 +136,7 @@
 			<particles value="true" start-time="0.4" end-time="0.5">
 				<particle-file path="flash.xml"/>
 			</particles>
-			<unit value="machine_gun_solder_" amount="4" />
+			<unit value="machine_gun_soldier_" amount="4" />
 			<attack-strenght value="200"/>
 			<attack-var value="50"/>
 			<attack-range value="12"/>

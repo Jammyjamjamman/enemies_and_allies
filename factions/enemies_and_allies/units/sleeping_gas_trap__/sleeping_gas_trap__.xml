@@ -102,10 +102,10 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="8"/>
                         	<target value="unit-types"> <!-- ally foe faction unit-types all-->
-					<unit-type name="carbine_solder" />
+					<unit-type name="carbine_soldier" />
 					<unit-type name="flame_thrower" />
 					<unit-type name="howitzer" />
-					<unit-type name="machine_gun_solder" />
+					<unit-type name="machine_gun_soldier" />
 					<unit-type name="recruit" />
 					<unit-type name="rifleman" />
 					<unit-type name="rocket_launcher" />
