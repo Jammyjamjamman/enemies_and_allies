@@ -137,7 +137,7 @@
 			<stop-skill value="stop_skill"/>
 			<repair-skill value="heal"/>
 			<repaired-units>
-				<unit name="carbine_solder"/>
+				<unit name="carbine_soldier"/>
 			</repaired-units>
 		</command-->
 

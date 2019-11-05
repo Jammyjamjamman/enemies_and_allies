@@ -145,7 +145,7 @@
 				<allow-multiple-boosts value="true" />
 				<radius value="2"/>
                         	<target value="all"> <!-- ally foe faction unit-types all-->
-					<!--unit-type name="carbine_solder" /-->
+					<!--unit-type name="carbine_soldier" /-->
                                 </target>
 				<max-hp value="-100" value-percent-multiplier="true"/>
 				<max-ep value="0"/>
