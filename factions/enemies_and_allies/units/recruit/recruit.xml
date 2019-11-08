@@ -340,6 +340,7 @@
 				<unit name="headquarters"/>
 				<unit name="advanced_barracks"/>
 				<unit name="poison_gas_trap"/>
+				<unit name="saumur_tank"/>
 				<unit name="sleeping_gas_trap"/>
 				<unit name="poison_gas_trap_"/>
 				<unit name="sleeping_gas_trap_"/>
