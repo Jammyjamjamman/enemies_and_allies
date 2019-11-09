@@ -21,7 +21,7 @@
 		<unit name="leclerc_tank" amount="0"/>
 		<unit name="conqueror_tank" amount="0"/>
 		<unit name="boeing_bomber" amount="0"/>
-		<unit name="military_ambulance" amount="0"/>
+		<unit name="military_ambulance" amount="1"/>
 	</starting-units>
 	<music value="true" path="music/the_shining_city.ogg"/>
 </faction>
