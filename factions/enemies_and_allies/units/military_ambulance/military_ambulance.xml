@@ -6,17 +6,17 @@
 		<height value="2"/>
 		<max-hp value="3700" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="60"/>	
-		<armor-type value="metal"/>				
-		<sight value="10"/>
-		<time value="80"/>	
-		<multi-selection value="true"/>	
+		<armor value="60"/>
+		<armor-type value="metal"/>
+		<sight value="11"/>
+		<time value="80"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="rotated_climb"/>
 		</properties>
@@ -28,7 +28,7 @@
 		<resource-requirements>
 			<resource name="wood" amount="200"/>
 			<resource name="gold" amount="150"/>
-			<resource name="oil" amount="10"/>		
+			<resource name="oil" amount="10"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/swordman.bmp"/>
@@ -54,57 +54,146 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
 			<animation path="models/army_ambulance_idle.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="11"/>
+				<target value="faction">
+					<unit-type name="flame_thrower"/>
+					<unit-type name="motorcycle" />
+					<unit-type name="recruit" />
+					<unit-type name="rifleman" />
+					<unit-type name="rocket_launcher" />
+					<unit-type name="sleeping_gas_soldier" />
+					<unit-type name="technician" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
+			</attack-boost>
+			<particles value="true">
+				<particle-file path="../../particles/particle_range.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="11"/>
+					<min-radius value="10.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
 		</skill>
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="340"/>
 			<anim-speed value="44"/>
 			<animation path="models/army_ambulance_move.g3d"/>
 			<sound enabled="false"/>
-		</skill>
-
-		<skill>
-			<type value="produce"/>
-			<name value="produce_skill"/>	
-			<ep-cost value="0" />
-			<speed value="280" />
-			<anim-speed value="300" />
-			<animation path="models/army_ambulance_idle.g3d" />
-			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="11"/>
+				<target value="faction">
+					<unit-type name="flame_thrower"/>
+					<unit-type name="motorcycle" />
+					<unit-type name="recruit" />
+					<unit-type name="rifleman" />
+					<unit-type name="rocket_launcher" />
+					<unit-type name="sleeping_gas_soldier" />
+					<unit-type name="technician" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
+			</attack-boost>
+			<particles value="true">
+				<particle-file path="../../particles/particle_range.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="11"/>
+					<min-radius value="10.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
 		</skill>
 
 		<skill>
 			<type value="repair"/>
-			<name value="heal"/>		
+			<name value="heal"/>
 			<ep-cost value="1"/>
 			<speed value="500"/>
 			<anim-speed value="500"/>
 			<animation path="models/army_ambulance_idle.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="11"/>
+				<target value="faction">
+					<unit-type name="flame_thrower"/>
+					<unit-type name="motorcycle" />
+					<unit-type name="recruit" />
+					<unit-type name="rifleman" />
+					<unit-type name="rocket_launcher" />
+					<unit-type name="sleeping_gas_soldier" />
+					<unit-type name="technician" />
+				</target>
+				<max-hp value="0" regeneration="5"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="healing_particles.xml"/>
+				</particles>
+			</attack-boost>
+			<particles value="true">
+				<particle-file path="../../particles/particle_range.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="11"/>
+					<min-radius value="10.9"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0" z="0"/>
+				</particle-file>
+			</particles>
 		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
 			<animation path="models/army_ambulance_die.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/explode.wav"/>
-			</sound>	
+			</sound>
 			<particles value="true" start-time="0.001" end-time="0.3">
 				<particle-file path="../oil_well/fire_particles1.xml"/>
 				<particle-file path="../oil_well/fire_particles2.xml"/>
@@ -114,15 +203,15 @@
 				<particle-file path="../oil_well/fire_particles6.xml"/>
 				<particle-file path="../oil_well/fire_particles7.xml"/>
 				<particle-file path="../oil_well/fire_particles8.xml"/>
-			</particles>			
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>
@@ -150,15 +239,15 @@
 			<stop-skill value="stop_skill"/>
 			<move-skill value="move_skill"/>
 			<repair-skill value="heal"/>
-			<repaired-units>	
-				<unit name="carbine_soldier"/>	
-				<unit name="challenger_tank"/>	
-				<unit name="flame_thrower"/>		
-				<unit name="conqueror_tank"/>		
-				<unit name="howitzer"/>	
-				<unit name="hawk_copter_landed"/>	
-				<unit name="jeep"/>	
-				<unit name="leclerc_tank"/>		
+			<repaired-units>
+				<unit name="carbine_soldier"/>
+				<unit name="challenger_tank"/>
+				<unit name="flame_thrower"/>
+				<unit name="conqueror_tank"/>
+				<unit name="howitzer"/>
+				<unit name="hawk_copter_landed"/>
+				<unit name="jeep"/>
+				<unit name="leclerc_tank"/>
 				<unit name="machine_gun_soldier"/>
 				<unit name="mrds_vehicle"/>
 				<unit name="avgp_cougar"/>
@@ -167,27 +256,17 @@
 				<unit name="nuclear_missile_launcher_"/>
 				<unit name="nuclear_missile_launcher__"/>
 				<unit name="poison_gas_soldier"/>
-				<unit name="recruit"/>		
-				<unit name="rifleman"/>	
-				<unit name="saumur_tank"/>	
-				<unit name="sleeping_gas_soldier"/>	
+				<unit name="recruit"/>
+				<unit name="rifleman"/>
+				<unit name="saumur_tank"/>
+				<unit name="sleeping_gas_soldier"/>
 				<unit name="technician"/>
 				<unit name="military_ambulance"/>
-				<unit name="motorcycle"/>	
-				<unit name="uragan_vehicle"/>	
-				<unit name="m939_truck"/>	
-				<unit name="armoured_gun_vehicle"/>				
-			</repaired-units>		
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_flame_thrower_" />
-			<image path="../flame_thrower_/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="flame_thrower_"/>
+				<unit name="motorcycle"/>
+				<unit name="uragan_vehicle"/>
+				<unit name="m939_truck"/>
+				<unit name="armoured_gun_vehicle"/>
+			</repaired-units>
 		</command>
 
 	</commands>
