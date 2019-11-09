@@ -170,6 +170,15 @@
 			<produced-unit name="m939_truck"/>
 		</command>
 
+		<command>
+			<type value="produce"/>
+			<name value="produce_armoured_gun_vehicle" />
+			<image path="../armoured_gun_vehicle/images/swordman.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="armoured_gun_vehicle"/>
+		</command>
 
 		<command>
 			<type value="upgrade"/>
