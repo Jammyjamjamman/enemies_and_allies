@@ -4,7 +4,7 @@
 		<size value="4" />
 		<height value="3" />
 		<max-hp value="8000" regeneration="0"/>
-		<max-ep value="500" regeneration="2"/>
+		<max-ep value="0"/>
 		<armor value="25" />
 		<armor-type value="metal"/>
 		<sight value="12" />
@@ -54,26 +54,6 @@
 			<speed value="50" />
 			<anim-speed value="100" />
 			<animation path="models/hospital.g3d" />
-			<sound enabled="false" />
-		</skill>
-
-		<skill>
-			<type value="repair"/>
-			<name value="heal"/>
-			<ep-cost value="1"/>
-			<speed value="500"/>
-			<anim-speed value="500"/>
-			<animation path="models/hospital.g3d"/>
-			<sound enabled="false"/>
-		</skill>
-
-		<skill>
-			<type value="morph"/>
-			<name value="morph_skill"/>
-			<ep-cost value="0"/>
-			<speed value="500"/>
-			<anim-speed value="200"/>
-			<animation path="models/hospital.g3d"/>
 			<sound enabled="false" />
 		</skill>
 
@@ -128,19 +108,6 @@
 
 	<commands>
 
-		<!--command>
-			<type value="repair"/>
-			<name value="heal"/>
-			<image path="images/technician_heal.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<stop-skill value="stop_skill"/>
-			<repair-skill value="heal"/>
-			<repaired-units>
-				<unit name="carbine_soldier"/>
-			</repaired-units>
-		</command-->
-
 		<command>
 			<type value="produce"/>
 			<name value="produce_military_ambulance" />
@@ -150,27 +117,6 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="military_ambulance"/>
 		</command>
-
-		<!--command>
-			<type value="upgrade"/>
-			<name value="armour_troops"/>
-			<image path="../../upgrades/armour_troops/images/training_field.bmp"/>
-			<unit-requirements />
-			<upgrade-requirements />
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="armour_troops"/>
-		</command>
-
-		<command>
-			<type value="morph"/>
-			<name value="upgrade"/>
-			<image path="../barracks_i_i/images/barracks.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<morph-skill value="morph_skill"/>
-			<morph-unit name= "barracks_i_i"/>
-			<discount value="0"/>
-		</command-->
 
 		<command>
 			<type value="upgrade"/>

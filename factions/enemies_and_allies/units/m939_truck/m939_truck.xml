@@ -4,19 +4,19 @@
 	<parameters>
 		<size value="3"/>
 		<height value="3"/>
-		<max-hp value="3000" regeneration="1"/>
+		<max-hp value="3000" regeneration="2"/>
 		<max-ep value="0"/>
 		<max-unit-count value="6"/>
-		<armor value="80"/>	
-		<armor-type value="metal"/>				
+		<armor value="80"/>
+		<armor-type value="metal"/>
 		<sight value="20"/>
-		<time value="160"/>	
-		<multi-selection value="true"/>	
+		<time value="160"/>
+		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels/>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="rotated_climb"/>
 		</properties>
@@ -52,10 +52,10 @@
 	</parameters>
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="45"/>
@@ -65,7 +65,7 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="350"/>
 			<anim-speed value="140"/>
@@ -75,17 +75,17 @@
 
 		<skill>
 			<type value="produce" />
-			<name value="produce_skill"/>		
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="models/mtvr_idle.g3d" />
 			<sound enabled="false" />
-		</skill>	
+		</skill>
 
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="80"/>
 			<anim-speed value="80"/>
@@ -102,15 +102,15 @@
 				<particle-file path="../oil_well/fire_particles6.xml"/>
 				<particle-file path="../oil_well/fire_particles7.xml"/>
 				<particle-file path="../oil_well/fire_particles8.xml"/>
-			</particles>		
+			</particles>
 			<fade value="false"/>
 		</skill>
 
 
 	</skills>
-	
+
 	<commands>
-		
+
 		<command>
 			<type value="stop"/>
 			<name value="stop"/>

@@ -4,7 +4,7 @@
 	<parameters>
 		<size value="3"/>
 		<height value="2"/>
-		<max-hp value="3700" regeneration="0"/>
+		<max-hp value="3700" regeneration="1"/>
 		<max-ep value="0"/>
 		<armor value="60"/>
 		<armor-type value="metal"/>
@@ -68,6 +68,8 @@
 				<radius value="11"/>
 				<target value="faction">
 					<unit-type name="flame_thrower"/>
+					<unit-type name="machine_gun_soldier"/>
+					<unit-type name="machine_gun_soldier_"/>
 					<unit-type name="motorcycle" />
 					<unit-type name="recruit" />
 					<unit-type name="rifleman" />
@@ -111,6 +113,8 @@
 				<radius value="11"/>
 				<target value="faction">
 					<unit-type name="flame_thrower"/>
+					<unit-type name="machine_gun_soldier"/>
+					<unit-type name="machine_gun_soldier_"/>
 					<unit-type name="motorcycle" />
 					<unit-type name="recruit" />
 					<unit-type name="rifleman" />
@@ -154,6 +158,8 @@
 				<radius value="11"/>
 				<target value="faction">
 					<unit-type name="flame_thrower"/>
+					<unit-type name="machine_gun_soldier"/>
+					<unit-type name="machine_gun_soldier_"/>
 					<unit-type name="motorcycle" />
 					<unit-type name="recruit" />
 					<unit-type name="rifleman" />
