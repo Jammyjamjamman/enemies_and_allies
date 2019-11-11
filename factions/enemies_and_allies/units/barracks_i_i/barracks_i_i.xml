@@ -116,6 +116,29 @@
 			<fade value="false"/>
 		</skill>
 
+
+		<!-- The building can't use this attack skill. It's only enabled so the AI
+		will morph it from barrack_i -->
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="1"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="models/barracks_2.g3d" />
+			<sound enabled="false"/>
+			<attack-strength value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="0"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<splash value="false"/>
+			<attack-start-time value="0.0"/>
+			<projectile value="false"/>
+		</skill>
+
 	</skills>
 
 	<commands>
