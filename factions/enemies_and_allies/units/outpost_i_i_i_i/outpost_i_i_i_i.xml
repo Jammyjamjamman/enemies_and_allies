@@ -116,6 +116,26 @@
 			<fade value="false"/>
 		</skill>
 
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="1"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="models/outpost_4.g3d"/>
+			<sound enabled="false"/>
+			<attack-strength value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="0"/>
+			<attack-type value="energy"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<splash value="false"/>
+			<attack-start-time value="0.0"/>
+			<projectile value="false"/>
+		</skill>
+
 
 	</skills>
 
