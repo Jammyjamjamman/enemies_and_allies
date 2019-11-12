@@ -9,10 +9,13 @@
 		<upgrade name="technology_lvl2"/>
 	</upgrade-requirements>
 	<resource-requirements>
-		<resource name="gold" amount="800"/>
-		<resource name="oil" amount="50"/>
+		<resource name="gold" amount="300"/>
+		<resource name="stone" amount="300"/>
+		<resource name="oil" amount="25"/>
 	</resource-requirements>
-	<effects/>
+	<effects>
+		<unit name="oil_well"/>
+	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>
 	<sight value="0"/>
@@ -20,5 +23,5 @@
 	<attack-range value="0"/>
 	<armor value="0"/>
 	<move-speed value="0"/>
-	<production-speed value="0"/>
+	<production-speed value="100"/>
 </upgrade>

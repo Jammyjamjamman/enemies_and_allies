@@ -9,16 +9,22 @@
 		<upgrade name="technology_lvl3"/>
 	</upgrade-requirements>
 	<resource-requirements>
-		<resource name="gold" amount="1200"/>
-		<resource name="oil" amount="80"/>
+		<resource name="gold" amount="250"/>
+		<resource name="stone" amount="150"/>
+		<resource name="oil" amount="50"/>
 	</resource-requirements>
-	<effects/>
+	<effects>
+		<unit name="headquarters"/>
+		<unit name="barracks"/>
+		<unit name="hangar"/>
+		<unit name="advanced_barracks"/>
+	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>
 	<sight value="0"/>
 	<attack-strenght value="0"/>
 	<attack-range value="0"/>
-	<armor value="0"/>
+	<armor value="30"/>
 	<move-speed value="0"/>
 	<production-speed value="0"/>
 </upgrade>
