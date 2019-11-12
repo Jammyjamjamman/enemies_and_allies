@@ -156,7 +156,18 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<attack-skill value="attack_skill"/>
-                        <stop-skill value="stop_skill"/>
+      <stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="upgrade"/>
+			<image path="../outpost_i_i_i/images/swordman.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "outpost_i_i_i_i"/>
+			<discount value="0"/>
 		</command>
 
 	</commands>
