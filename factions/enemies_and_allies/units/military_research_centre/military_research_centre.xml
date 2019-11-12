@@ -4,6 +4,7 @@
 	<parameters>
 		<size value="4" />
 		<height value="2" />
+		<ai-build-size value="6"/>
 		<max-hp value="5500" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
@@ -114,116 +115,36 @@
 
 		<command>
 			<type value="upgrade"/>
-			<name value="upgrade_hanger_lvl2" />
-			<image path="../../upgrades/hanger_lvl2/images/hl2.bmp" />
+			<name value="upgrade_technology_lvl2" />
+			<image path="../../upgrades/technology_lvl2/images/bl2.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="hanger_lvl2"/>
+			<produced-upgrade name="technology_lvl2"/>
 		</command>
 
 		<command>
 			<type value="upgrade"/>
-			<name value="upgrade_hanger_lvl3" />
-			<image path="../../upgrades/hanger_lvl3/images/hl3.bmp" />
+			<name value="upgrade_technology_lvl3" />
+			<image path="../../upgrades/technology_lvl3/images/bl3.bmp" />
 			<unit-requirements />
 			<upgrade-requirements>
-				<upgrade name="hanger_lvl2"/>
+				<upgrade name="technology_lvl2"/>
 			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="hanger_lvl3"/>
+			<produced-upgrade name="technology_lvl3"/>
 		</command>
 
 		<command>
 			<type value="upgrade"/>
-			<name value="upgrade_hanger_lvl4" />
-			<image path="../../upgrades/hanger_lvl4/images/hl4.bmp" />
+			<name value="upgrade_technology_lvl4" />
+			<image path="../../upgrades/technology_lvl4/images/bl4.bmp" />
 			<unit-requirements />
 			<upgrade-requirements>
-				<upgrade name="hanger_lvl3"/>
+				<upgrade name="technology_lvl3"/>
 			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="hanger_lvl4"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_barracks_lvl2" />
-			<image path="../../upgrades/barracks_lvl2/images/bl2.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="barracks_lvl2"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_barracks_lvl3" />
-			<image path="../../upgrades/barracks_lvl3/images/bl3.bmp" />
-			<unit-requirements />
-			<upgrade-requirements>
-				<upgrade name="barracks_lvl2"/>
-			</upgrade-requirements>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="barracks_lvl3"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_barracks_lvl4" />
-			<image path="../../upgrades/barracks_lvl4/images/bl4.bmp" />
-			<unit-requirements />
-			<upgrade-requirements>
-				<upgrade name="barracks_lvl3"/>
-			</upgrade-requirements>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="barracks_lvl4"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_defence_lvl1" />
-			<image path="../../upgrades/defence_lvl1/images/bl2.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="defence_lvl1"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_defence_lvl2" />
-			<image path="../../upgrades/defence_lvl2/images/bl2.bmp" />
-			<unit-requirements />
-			<upgrade-requirements>
-				<upgrade name="defence_lvl1"/>
-			</upgrade-requirements>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="defence_lvl2"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_defence_lvl3" />
-			<image path="../../upgrades/defence_lvl3/images/bl2.bmp" />
-			<unit-requirements />
-			<upgrade-requirements>
-				<upgrade name="defence_lvl2"/>
-			</upgrade-requirements>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="defence_lvl3"/>
-		</command>
-
-		<command>
-			<type value="upgrade"/>
-			<name value="upgrade_defence_lvl4" />
-			<image path="../../upgrades/defence_lvl4/images/bl2.bmp" />
-			<unit-requirements />
-			<upgrade-requirements>
-				<upgrade name="defence_lvl3"/>
-			</upgrade-requirements>
-			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="defence_lvl4"/>
+			<produced-upgrade name="technology_lvl4"/>
 		</command>
 
 	</commands>

@@ -28,7 +28,7 @@
 		<light enabled="false"/>
 		<unit-requirements/>
 		<upgrade-requirements>
-			<!--upgrade name="bombs_and_missiles"/-->
+			<upgrade name="technology_lvl3"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="wood" amount="250"/>

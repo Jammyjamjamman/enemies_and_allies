@@ -21,7 +21,9 @@
 		<properties/>
 		<light enabled="false"/>
 		<unit-requirements/>
-		<upgrade-requirements/>
+		<upgrade-requirements>
+			<upgrade name="technology_lvl2"/>
+		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="wood" amount="120"/>
 			<resource name="gold" amount="100"/>

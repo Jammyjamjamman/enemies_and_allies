@@ -93,7 +93,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
-			<animation path="../hanger_i/models/brake2.g3d" />
+			<animation path="../hangar/models/brake2.g3d" />
 			<sound enabled="true" start-time="0">
 				<sound-file path="../headquarters/sounds/tech_building_fall3.wav"/>
 			</sound>

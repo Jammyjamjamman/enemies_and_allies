@@ -252,12 +252,8 @@
 				<unit name="outpost_i"/>
 				<unit name="outpost_i_i"/>
 				<unit name="outpost_i_i_i"/>
-				<unit name="barracks_i"/>
-				<unit name="barracks_i_i"/>
-				<unit name="barracks_i_i_i"/>
-				<unit name="hanger_i"/>
-				<unit name="hanger_i_i"/>
-				<unit name="hanger_i_i_i"/>
+				<unit name="barracks"/>
+				<unit name="hangar"/>
 				<unit name="leclerc_tank"/>
 				<unit name="oil_well"/>
 				<unit name="m939_truck"/>
