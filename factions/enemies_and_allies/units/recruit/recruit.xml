@@ -243,13 +243,14 @@
 			<build-skill value="build_skill"/>
 			<buildings>
 				<building name="oil_well"/>
-				<building name="barracks_i"/>
-				<building name="hanger_i"/>
+				<building name="barracks"/>
+				<building name="hangar"/>
 				<building name="military_research_centre"/>
 				<building name="outpost_i"/>
 				<building name="headquarters"/>
 				<building name="advanced_barracks"/>
 				<building name="hospital"/>
+				<building name="vehicle_factory"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
@@ -329,12 +330,8 @@
 				<unit name="outpost_i"/>
 				<unit name="outpost_i_i"/>
 				<unit name="outpost_i_i_i"/>
-				<unit name="barracks_i"/>
-				<unit name="barracks_i_i"/>
-				<unit name="barracks_i_i_i"/>
-				<unit name="hanger_i"/>
-				<unit name="hanger_i_i"/>
-				<unit name="hanger_i_i_i"/>
+				<unit name="barracks"/>
+				<unit name="hangar"/>
 				<unit name="oil_well"/>
 				<unit name="military_research_centre"/>
 				<unit name="military_ambulance"/>
@@ -347,6 +344,7 @@
 				<unit name="sleeping_gas_trap_"/>
 				<unit name="gun_trap"/>
 				<unit name="hospital"/>
+				<unit name="vehicle_factory"/>
 			</repaired-units>
 		</command>
 

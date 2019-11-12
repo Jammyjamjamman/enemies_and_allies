@@ -26,7 +26,7 @@
 		<light enabled="false"/>
 		<unit-requirements/>
 		<upgrade-requirements>
-			<upgrade name="defence_lvl1"/>
+			<upgrade name="technology_lvl2"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="wood" amount="200"/>

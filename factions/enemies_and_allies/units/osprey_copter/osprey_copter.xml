@@ -22,7 +22,7 @@
 		<light enabled="false"/>
 		<unit-requirements/>
 		<upgrade-requirements>
-			<!--upgrade name="copters"/-->
+			<upgrade name="technology_lvl4"/>
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="wood" amount="300"/>
