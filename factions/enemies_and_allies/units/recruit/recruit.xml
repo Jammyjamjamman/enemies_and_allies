@@ -247,10 +247,10 @@
 				<building name="hangar"/>
 				<building name="military_research_centre"/>
 				<building name="outpost_i"/>
-				<building name="headquarters"/>
 				<building name="advanced_barracks"/>
 				<building name="hospital"/>
 				<building name="vehicle_factory"/>
+				<building name="headquarters"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">
