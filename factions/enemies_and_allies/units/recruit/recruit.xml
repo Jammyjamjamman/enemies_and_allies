@@ -324,26 +324,19 @@
 			<move-skill value="move_skill"/>
 			<repair-skill value="repair_skill"/>
 			<repaired-units>
-				<unit name="antiaircraft_gun_i"/>
-				<unit name="antiaircraft_gun_i_i"/>
-				<unit name="antiaircraft_gun_i_i_i"/>
+				<unit name="advanced_barracks"/>
+				<unit name="barracks"/>
+				<unit name="hangar"/>
+				<unit name="headquarters"/>
+				<unit name="hospital"/>
+				<unit name="military_research_centre"/>
+				<unit name="oil_well"/>
 				<unit name="outpost_i"/>
 				<unit name="outpost_i_i"/>
 				<unit name="outpost_i_i_i"/>
-				<unit name="barracks"/>
-				<unit name="hangar"/>
-				<unit name="oil_well"/>
-				<unit name="military_research_centre"/>
-				<unit name="military_ambulance"/>
-				<unit name="headquarters"/>
-				<unit name="advanced_barracks"/>
+				<unit name="outpost_i_i_i_i"/>
 				<unit name="poison_gas_trap"/>
-				<unit name="saumur_tank"/>
-				<unit name="sleeping_gas_trap"/>
 				<unit name="poison_gas_trap_"/>
-				<unit name="sleeping_gas_trap_"/>
-				<unit name="gun_trap"/>
-				<unit name="hospital"/>
 				<unit name="vehicle_factory"/>
 			</repaired-units>
 		</command>
