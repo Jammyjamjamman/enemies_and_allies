@@ -67,6 +67,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="11"/>
 				<target value="faction">
+					<unit-type name="carbine_soldier"/>
 					<unit-type name="flame_thrower"/>
 					<unit-type name="machine_gun_soldier"/>
 					<unit-type name="machine_gun_soldier_"/>
@@ -112,6 +113,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="11"/>
 				<target value="faction">
+					<unit-type name="carbine_soldier"/>
 					<unit-type name="flame_thrower"/>
 					<unit-type name="machine_gun_soldier"/>
 					<unit-type name="machine_gun_soldier_"/>
@@ -157,6 +159,7 @@
 				<allow-multiple-boosts value="false" />
 				<radius value="11"/>
 				<target value="faction">
+					<unit-type name="carbine_soldier"/>
 					<unit-type name="flame_thrower"/>
 					<unit-type name="machine_gun_soldier"/>
 					<unit-type name="machine_gun_soldier_"/>
@@ -247,31 +250,17 @@
 			<repair-skill value="heal"/>
 			<repaired-units>
 				<unit name="carbine_soldier"/>
-				<unit name="challenger_tank"/>
 				<unit name="flame_thrower"/>
-				<unit name="conqueror_tank"/>
 				<unit name="howitzer"/>
-				<unit name="hawk_copter_landed"/>
-				<unit name="jeep"/>
-				<unit name="leclerc_tank"/>
 				<unit name="machine_gun_soldier"/>
-				<unit name="mrds_vehicle"/>
-				<unit name="avgp_cougar"/>
-				<unit name="m-109_artillery"/>
-				<unit name="nuclear_missile_launcher"/>
-				<unit name="nuclear_missile_launcher_"/>
-				<unit name="nuclear_missile_launcher__"/>
+				<unit name="machine_gun_soldier_"/>
 				<unit name="poison_gas_soldier"/>
 				<unit name="recruit"/>
 				<unit name="rifleman"/>
-				<unit name="saumur_tank"/>
 				<unit name="sleeping_gas_soldier"/>
 				<unit name="technician"/>
 				<unit name="military_ambulance"/>
 				<unit name="motorcycle"/>
-				<unit name="uragan_vehicle"/>
-				<unit name="m939_truck"/>
-				<unit name="armoured_gun_vehicle"/>
 			</repaired-units>
 		</command>
 
