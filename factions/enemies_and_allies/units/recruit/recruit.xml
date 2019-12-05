@@ -248,7 +248,6 @@
 				<building name="military_research_centre"/>
 				<building name="outpost_i"/>
 				<building name="advanced_barracks"/>
-				<building name="hospital"/>
 				<building name="vehicle_factory"/>
 				<building name="headquarters"/>
 			</buildings>
@@ -328,7 +327,6 @@
 				<unit name="barracks"/>
 				<unit name="hangar"/>
 				<unit name="headquarters"/>
-				<unit name="hospital"/>
 				<unit name="military_research_centre"/>
 				<unit name="oil_well"/>
 				<unit name="outpost_i"/>

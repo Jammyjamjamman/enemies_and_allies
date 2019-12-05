@@ -147,5 +147,15 @@
 			<produced-upgrade name="technology_lvl4"/>
 		</command>
 
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_medicine"/>
+			<image path="../../upgrades/medicine/images/training_field.bmp"/>
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="medicine"/>
+		</command>
+
 	</commands>
 </unit>
