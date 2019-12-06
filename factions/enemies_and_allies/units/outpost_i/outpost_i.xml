@@ -69,6 +69,9 @@
 			<anim-speed value="200"/>
 			<animation path="models/outpost_1.g3d"/>
 			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
 
 		<skill>
