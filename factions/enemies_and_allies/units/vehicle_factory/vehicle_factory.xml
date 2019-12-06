@@ -158,5 +158,15 @@
 			<produced-unit name="conqueror_tank"/>
 		</command>
 
+		<command>
+			<type value="produce"/>
+			<name value="produce_military_ambulance" />
+			<image path="../military_ambulance/images/swordman.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="military_ambulance"/>
+		</command>
+
 	</commands>
 </unit>
