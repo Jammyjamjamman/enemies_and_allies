@@ -150,7 +150,7 @@
 		<skill>
 			<type value="repair"/>
 			<name value="heal"/>
-			<ep-cost value="1"/>
+			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="500"/>
 			<animation path="models/army_ambulance_idle.g3d"/>
