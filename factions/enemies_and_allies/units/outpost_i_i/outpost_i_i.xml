@@ -24,9 +24,7 @@
 		<unit-requirements>
 			<unit name="headquarters"/>
 		</unit-requirements>
-		<upgrade-requirements>
-			<upgrade name="technology_lvl2"/>
-		</upgrade-requirements>
+		<upgrade-requirements/>
 		<resource-requirements>
 			<resource name="gold" amount="100"/>
 			<resource name="wood" amount="100"/>
@@ -70,6 +68,9 @@
 			<anim-speed value="200"/>
 			<animation path="models/outpost_2.g3d"/>
 			<sound enabled="false" />
+			<particles value="true">
+				<particle-file path="../../particles/upgrade_particles.xml" />
+			</particles>
 		</skill>
 
 		<skill>
