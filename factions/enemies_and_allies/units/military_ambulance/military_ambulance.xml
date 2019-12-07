@@ -257,6 +257,7 @@
 				<unit name="poison_gas_soldier"/>
 				<unit name="recruit"/>
 				<unit name="rifleman"/>
+				<unit name="rocket_launcher" />
 				<unit name="sleeping_gas_soldier"/>
 				<unit name="technician"/>
 				<unit name="military_ambulance"/>
