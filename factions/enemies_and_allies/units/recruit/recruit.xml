@@ -209,6 +209,19 @@
 			<fade value="false"/>
 		</skill>
 
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="200"/>
+			<animation path="models/recruit_idle.g3d"/>
+			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="../../particles/training_particles.xml" />
+			</particles>
+		</skill>
+
 	</skills>
 
 	<!-- *** commands *** -->
@@ -258,26 +271,6 @@
 				<sound-file path="sounds/worker_work_end3.wav"/>
 			</built-sound>
 		</command>
-
-		<!--command>
-			<type value= "build"/>
-			<name value="build_advanced"/>
-			<image path="images/worker_build_advanced.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<build-skill value="build_skill"/>
-			<buildings>
-				<building name="technodrome"/>
-				<building name="defense_tower"/>
-                	</buildings>
-			<start-sound enabled="false"/>
-			<built-sound enabled="true">
-				<sound-file path="sounds/worker_work_end1.wav"/>
-				<sound-file path="sounds/worker_work_end2.wav"/>
-				<sound-file path="sounds/worker_work_end3.wav"/>
-			</built-sound>
-		</command-->
 
 		<command>
 			<type value="harvest"/>
@@ -337,6 +330,32 @@
 				<unit name="poison_gas_trap_"/>
 				<unit name="vehicle_factory"/>
 			</repaired-units>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="train_machine_gun_soldier"/>
+			<image path="../machine_gun_soldier/images/swordman.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="technology_lvl4"/>
+			</upgrade-requirements>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "machine_gun_soldier"/>
+			<discount value="10"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="train_technician"/>
+			<image path="../technician/images/technician.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="technology_lvl4"/>
+			</upgrade-requirements>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "technician"/>
+			<discount value="25"/>
 		</command>
 
 	</commands>
