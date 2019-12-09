@@ -336,7 +336,9 @@
 			<type value="morph"/>
 			<name value="train_machine_gun_soldier"/>
 			<image path="../machine_gun_soldier/images/swordman.bmp"/>
-			<unit-requirements/>
+			<unit-requirements>
+				<unit name="barracks" />
+			</unit-requirements>
 			<upgrade-requirements>
 				<upgrade name="technology_lvl4"/>
 			</upgrade-requirements>
@@ -349,7 +351,9 @@
 			<type value="morph"/>
 			<name value="train_technician"/>
 			<image path="../technician/images/technician.bmp"/>
-			<unit-requirements/>
+			<unit-requirements>
+				<unit name="military_research_centre" />
+			</unit-requirements>
 			<upgrade-requirements>
 				<upgrade name="technology_lvl4"/>
 			</upgrade-requirements>
