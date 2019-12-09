@@ -9,11 +9,13 @@
 		<armor value="100"/>
 		<armor-type value="wood"/>
 		<sight value="15"/>
-		<time value="50"/>
+		<time value="150"/>
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="false"/>
-		<levels/>
+		<levels>
+			<level name="historic" kills="8"/>
+		</levels>
 		<fields>
 			<field value="land"/>
 		</fields>
@@ -28,9 +30,10 @@
 			<upgrade name="technology_lvl4"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="gold" amount="150"/>
-			<resource name="wood" amount="100"/>
-			<resource name="oil" amount="12"/>
+			<resource name="gold" amount="275"/>
+			<resource name="wood" amount="175"/>
+			<resource name="stone" amount="150"/>
+			<resource name="oil" amount="30"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/swordman.bmp"/>

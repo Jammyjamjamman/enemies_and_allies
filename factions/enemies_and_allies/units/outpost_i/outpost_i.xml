@@ -10,11 +10,13 @@
 		<armor value="50"/>
 		<armor-type value="wood"/>
 		<sight value="12"/>
-		<time value="50"/>
+		<time value="80"/>
 		<multi-selection value="true"/>
 		<uniform-selection value="true"/>
 		<cellmap value="false"/>
-		<levels/>
+		<levels>
+			<level name="historic" kills="5"/>
+		</levels>
 		<fields>
 			<field value="land"/>
 		</fields>
@@ -28,7 +30,8 @@
 		<upgrade-requirements/>
 		<resource-requirements>
 			<resource name="gold" amount="200"/>
-			<resource name="wood" amount="200"/>
+			<resource name="wood" amount="150"/>
+			<resource name="stone" amount="50"/>
 			<resource name="oil" amount="20"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -150,7 +153,7 @@
 			<upgrade-requirements/>
 			<morph-skill value="morph_skill"/>
 			<morph-unit name= "outpost_i_i"/>
-			<discount value="0"/>
+			<discount value="25"/>
 		</command>
 
 	</commands>
