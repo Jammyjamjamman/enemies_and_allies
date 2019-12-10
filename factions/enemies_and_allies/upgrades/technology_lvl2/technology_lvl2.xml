@@ -11,7 +11,10 @@
 		<resource name="stone" amount="250"/>
 		<resource name="oil" amount="20"/>
 	</resource-requirements>
-	<effects/>
+	<effects>
+		<unit name="barracks"/>
+		<unit name="m939_truck"/>
+	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>
 	<sight value="0"/>
@@ -19,5 +22,5 @@
 	<attack-range value="0"/>
 	<armor value="0"/>
 	<move-speed value="0"/>
-	<production-speed value="0"/>
+	<production-speed value="150"/>
 </upgrade>

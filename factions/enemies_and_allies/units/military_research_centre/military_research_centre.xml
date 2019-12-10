@@ -28,7 +28,7 @@
 		</properties>
 		<light enabled="false" />
 		<unit-requirements>
-			<unit name="headquarters" />
+			<unit name="barracks" />
 		</unit-requirements>
 		<upgrade-requirements />
 		<resource-requirements>

@@ -10,10 +10,11 @@
 	<starting-units>
 		<unit name="oil" amount="2"/>
 		<unit name="headquarters" amount="1"/>
-		<unit name="recruit" amount="3"/>
-		<unit name="rifleman" amount="3"/>
 		<unit name="outpost_i" amount="1"/>
-		<unit name="outpost_i_i" amount="0"/>
+		<unit name="recruit" amount="3"/>
+		<unit name="rifleman" amount="2"/>
+		<unit name="howitzer" amount="1"/>
+		<unit name="rocket_launcher" amount="1"/>
 		<unit name="gun_trap" amount="0"/>
 		<unit name="nuclear_missile_launcher" amount="0"/>
 		<unit name="sleeping_gas_soldier" amount="0"/>

@@ -9,12 +9,11 @@
 		<armor value="40"/>
 		<armor-type value="metal"/>
 		<sight value="20"/>
-		<time value="100"/>
+		<time value="150"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="expert" kills="15"/>
-			<level name="elite" kills="21"/>
 		</levels>
 		<fields>
 			<field value="air"/>

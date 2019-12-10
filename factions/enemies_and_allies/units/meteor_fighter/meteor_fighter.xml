@@ -9,7 +9,7 @@
 		<armor value="20"/>
 		<armor-type value="metal"/>
 		<sight value="15"/>
-		<time value="40"/>
+		<time value="150"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
@@ -25,8 +25,8 @@
 			<upgrade name="technology_lvl2"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="120"/>
-			<resource name="gold" amount="100"/>
+			<resource name="stone" amount="50"/>
+			<resource name="gold" amount="220"/>
 			<resource name="oil" amount="6"/>
 		</resource-requirements>
 		<resources-stored/>
