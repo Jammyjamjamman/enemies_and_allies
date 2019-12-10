@@ -11,6 +11,7 @@
 		<sight value="11"/>
 		<time value="80"/>
 		<multi-selection value="true"/>
+		<max-unit-count value="3"/>
 		<cellmap value="false"/>
 		<levels>
 		</levels>
