@@ -82,8 +82,8 @@
 			<sound enabled="false"/>
 			<attack-strenght value="500"/>
 			<attack-var value="500"/>
-			<attack-range value="5"/>
-			<attack-type value="piercing"/>
+			<attack-range value="9"/>
+			<attack-type value="energy"/>
 			<attack-start-time value="0.4"/>
 			<particles value="true">
 				<particle-file path="fire_particles.xml"/>

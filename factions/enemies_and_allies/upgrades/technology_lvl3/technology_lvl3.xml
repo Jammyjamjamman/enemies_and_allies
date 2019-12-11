@@ -11,7 +11,7 @@
 	<resource-requirements>
 		<resource name="gold" amount="300"/>
 		<resource name="stone" amount="300"/>
-		<resource name="oil" amount="25"/>
+		<resource name="oil" amount="14"/>
 	</resource-requirements>
 	<effects>
 		<unit name="oil_well"/>

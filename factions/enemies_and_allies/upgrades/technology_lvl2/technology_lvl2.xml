@@ -9,7 +9,7 @@
 	<resource-requirements>
 		<resource name="gold" amount="250"/>
 		<resource name="stone" amount="250"/>
-		<resource name="oil" amount="20"/>
+		<resource name="oil" amount="6"/>
 	</resource-requirements>
 	<effects>
 		<unit name="barracks"/>

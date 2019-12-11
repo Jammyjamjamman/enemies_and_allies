@@ -257,11 +257,11 @@
 			<buildings>
 				<building name="oil_well"/>
 				<building name="barracks"/>
-				<building name="hangar"/>
 				<building name="military_research_centre"/>
+				<building name="vehicle_factory"/>
+				<building name="hangar"/>
 				<building name="outpost_i"/>
 				<building name="advanced_barracks"/>
-				<building name="vehicle_factory"/>
 				<building name="headquarters"/>
 			</buildings>
 			<start-sound enabled="false"/>
