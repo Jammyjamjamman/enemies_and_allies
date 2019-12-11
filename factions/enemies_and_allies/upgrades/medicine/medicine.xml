@@ -5,7 +5,9 @@
 	<image-cancel path="../../units/headquarters/images/tech_cancel.bmp"/>
 	<time value="300"/>
 	<unit-requirements/>
-	<upgrade-requirements/>
+	<upgrade-requirements>
+		<upgrade name="technology_lvl4"/>
+	</upgrade-requirements>
 	<resource-requirements>
 		<resource name="gold" amount="250"/>
 	</resource-requirements>
