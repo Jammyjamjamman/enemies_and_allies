@@ -30,10 +30,13 @@
 		<unit-requirements>
 			<unit name="headquarters" />
 		</unit-requirements>
-		<upgrade-requirements />
+		<upgrade-requirements>
+			<upgrade name="technology_lvl3"/>
+		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="gold" amount="50" />
-			<resource name="wood" amount="200" />
+			<resource name="gold" amount="250" />
+			<resource name="stone" amount="125" />
+			<resource name="oil" amount="6" />
 		</resource-requirements>
 		<resources-stored />
 		<image path="images/barracks.bmp" />

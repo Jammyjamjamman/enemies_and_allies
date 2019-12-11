@@ -4,14 +4,16 @@
 	<image path="images/bl4.bmp"/>
 	<image-cancel path="../../units/headquarters/images/tech_cancel.bmp"/>
 	<time value="350"/>
-	<unit-requirements/>
+	<unit-requirements>
+		<unit name="advanced_barracks"/>
+	</unit-requirements>
 	<upgrade-requirements>
 		<upgrade name="technology_lvl3"/>
 	</upgrade-requirements>
 	<resource-requirements>
 		<resource name="gold" amount="250"/>
 		<resource name="stone" amount="150"/>
-		<resource name="oil" amount="50"/>
+		<resource name="oil" amount="20"/>
 	</resource-requirements>
 	<effects>
 		<unit name="headquarters"/>

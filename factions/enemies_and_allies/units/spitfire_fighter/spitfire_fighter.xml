@@ -9,7 +9,7 @@
 		<armor value="10"/>
 		<armor-type value="metal"/>
 		<sight value="13"/>
-		<time value="50"/>
+		<time value="125"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
@@ -25,8 +25,8 @@
 			<!--upgrade name="copters"/-->
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="100"/>
-			<resource name="gold" amount="60"/>
+			<resource name="wood" amount="50"/>
+			<resource name="gold" amount="200"/>
 			<resource name="oil" amount="5"/>
 		</resource-requirements>
 		<resources-stored/>

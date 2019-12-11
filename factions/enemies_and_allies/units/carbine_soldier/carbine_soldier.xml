@@ -4,16 +4,17 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="1000" regeneration="0"/>
+		<max-hp value="1000" regeneration="1"/>
 		<max-ep value="0"/>
 		<armor value="30"/>
 		<armor-type value="leather"/>
 		<sight value="15"/>
-		<time value="50"/>
+		<time value="70"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
-			<level name="advanced" kills="6"/>
+			<level name="sergeant" kills="5"/>
+			<level name="captain" kills="12"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -25,7 +26,9 @@
 			<upgrade name="technology_lvl2"/>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="gold" amount="300"/>
+			<resource name="gold" amount="120"/>
+			<resource name="wood" amount="40"/>
+			<resource name="oil" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/swordman.bmp"/>
@@ -66,7 +69,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>
 			<ep-cost value="0"/>
-			<speed value="220"/>
+			<speed value="240"/>
 			<anim-speed value="120"/>
 			<animation path="models/infantry_2_walk.g3d"/>
 			<sound enabled="false"/>
@@ -86,7 +89,7 @@
 			<type value="move"/>
 			<name value="charge_skill"/>
 			<ep-cost value="0"/>
-			<speed value="220"/>
+			<speed value="240"/>
 			<anim-speed value="125"/>
 			<animation path="models/infantry_2_walk.g3d"/>
 			<sound enabled="false"/>
@@ -106,8 +109,8 @@
 				<particle-file path="flash.xml"/>
 			</particles>
 			<attack-strenght value="175"/>
-			<attack-var value="25"/>
-			<attack-range value="10"/>
+			<attack-var value="20"/>
+			<attack-range value="12"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.4"/>
 			<attack-fields>

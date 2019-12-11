@@ -8,8 +8,8 @@
 		<max-ep value="0"/>
 		<armor value="50"/>
 		<armor-type value="metal"/>
-		<sight value="10"/>
-		<time value="50"/>
+		<sight value="16"/>
+		<time value="80"/>
 		<multi-selection value="true"/>
 		<cellmap value="false"/>
 		<levels>
