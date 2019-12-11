@@ -254,7 +254,6 @@
 				<unit name="challenger_tank"/>
 				<unit name="conqueror_tank"/>
 				<unit name="gun_trap"/>
-				<unit name="hawk_copter_landed"/>
 				<unit name="howitzer"/>
 				<unit name="jeep"/>
 				<unit name="leclerc_tank"/>

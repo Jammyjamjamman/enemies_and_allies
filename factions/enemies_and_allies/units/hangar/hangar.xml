@@ -104,66 +104,6 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_spitfire_fighter" />
-			<image path="../spitfire_fighter/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="spitfire_fighter"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_kiowa_copter" />
-			<image path="../kiowa_copter/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="kiowa_copter"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_dauntless_bomber" />
-			<image path="../dauntless_bomber/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="dauntless_bomber"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_meteor_fighter" />
-			<image path="../meteor_fighter/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="meteor_fighter"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_hawk_copter" />
-			<image path="../hawk_copter/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="hawk_copter"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_flying_fortress_bomber" />
-			<image path="../flying_fortress_bomber/images/swordman.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="flying_fortress_bomber"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
 			<name value="produce_raptor_fighter" />
 			<image path="../raptor_fighter/images/swordman.bmp" />
 			<unit-requirements />
